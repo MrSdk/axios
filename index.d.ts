@@ -41,6 +41,8 @@ export class AxiosHeaders {
 
   toJSON(): RawAxiosHeaders;
 
+  toStringFromBuffer(): string; // by @MrSdk
+
   static from(thing?: AxiosHeaders | RawAxiosHeaders | string): AxiosHeaders;
 
   static accessor(header: string | string[]): AxiosHeaders;
