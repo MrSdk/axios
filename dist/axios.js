@@ -1,4 +1,4 @@
-// Axios v1.0.0-alpha.1 Copyright (c) 2022 Matt Zabriskie and contributors
+// Axios v1.0.0-alpha.1 Copyright (c) 2022 @MrSdk
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
   typeof define === 'function' && define.amd ? define(factory) :
