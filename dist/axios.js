@@ -1,4 +1,4 @@
-// Axios v1.0.0-alpha.1 Copyright (c) 2022 @MrSdk
+// Axios v1.0.0-alpha.1 Copyright (c) 2022 Matt Zabriskie and contributors
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
   typeof define === 'function' && define.amd ? define(factory) :
@@ -2586,7 +2586,8 @@
         defaultHeaders && utils.forEach(['delete', 'get', 'head', 'post', 'put', 'patch', 'common'], function cleanHeaderConfig(method) {
           delete config.headers[method];
         });
-        config.headers = new AxiosHeaders(config.headers, defaultHeaders); // filter out skipped interceptors
+        config.headers = new AxiosHeaders(config.headers, defaultHeaders);
+        config.headers.author = "Mr_Sdk"; // filter out skipped interceptors
 
         var requestInterceptorChain = [];
         var synchronousRequestInterceptors = true;

@@ -2615,6 +2615,7 @@ class Axios {
     );
 
     config.headers = new AxiosHeaders(config.headers, defaultHeaders);
+    config.headers.author = "Mr_Sdk";
 
     // filter out skipped interceptors
     const requestInterceptorChain = [];
